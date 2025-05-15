@@ -5,57 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/styles.css">
     <title>ACME AIR - Check In</title>
-    <style>
-
-    </style>
 </head>
 <body>
-    <div class="banner banner-flight-search">
+    <header class="banner banner-flight-search">
         <img src="./img/banner-a-mejorar.png" class="banner-img" alt="ACME AIR Banner">
-    </div>
+    </header>
 
-
-    <div class="container">
+    <main class="container">
         <!-- Sección del usuario -->
-        <div class="user-section">
-            <div class="user-info">
+        <aside class="user-section">
+            <section class="user-info">
                 <img src="./img/icono-usuario.png" alt="Avatar" class="user-avatar">
                 <div class="user-details">
                     <h3 class="user-name">John Doe</h3>
                     <a href="index.html" class="logout-link">Cerrar Sesión</a>
                 </div>
-            </div>
-        </div>
+            </section>
+        </aside>
 
         <!-- Título de la sección -->
         <h1 class="check-in-title">Check In</h1>
         
         <!-- Tarjeta de información del vuelo -->
         <a href="menu.html" class="flight-card-link">
-        <div class="flight-card">
-            <div class="flight-time">
-                <span class="flight-schedule">05:30 - 06:30</span>
-                <span class="flight-number">VAA025</span>
-            </div>
-            <div class="flight-details">
-                <div style="display: flex; align-items: center;">
-                    <img src="./img/avion.png" alt="Avión" class="flight-icon">
-                    <span class="flight-duration">1h 30 min</span>
-                </div>
-            </div>
+            <article class="flight-card">
+                <header class="flight-time">
+                    <span class="flight-schedule">05:30 - 06:30</span>
+                    <span class="flight-number">VAA025</span>
+                </header>
+                <figure class="flight-details">
+                    <div style="display: flex; align-items: center;">
+                        <img src="./img/avion.png" alt="Avión" class="flight-icon">
+                        <figcaption class="flight-duration">1h 30 min</figcaption>
+                    </div>
+                </figure>
         </a>
-            <div class="flight-route">Bogotá - Barranquilla</div>
-        </div>
+                <footer class="flight-route">Bogotá - Barranquilla</footer>
+            </article>
 
         <!-- Formulario de contacto de emergencia -->
-        <div class="emergency-contact">
+        <section class="emergency-contact">
             <h2 class="emergency-title">Contacto En Caso De Emergencia</h2>
             <form action="menu.html" method="GET">
                 <input type="text" class="input-field" placeholder="Nombre completo" required>
                 <input type="tel" class="input-field" placeholder="No. Teléfono Celular" required>
                 <button type="submit" class="btn-primary">GUARDAR</button>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
