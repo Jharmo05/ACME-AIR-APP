@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME AIR - Registro</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="./img/banner-a-mejorar.png" class="banner-img" alt="ACME AIR Banner">
+        <div class="banner-content">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Registro</h1>
+        <div class="divider"></div>
+
+        <!-- Formulario de registro -->
+        <form action="crear-contrasena.html">
+            <input type="text" class="input-field" placeholder="Nombre Completo" required>
+            <input type="text" class="input-field" placeholder="No. Identificación" required>
+            <input type="email" class="input-field" placeholder="E-mail" required>
+            <input type="tel" class="input-field" placeholder="Téléfono" required>
+            <select class="select-field" required>
+                <option value="" disabled selected>Ciudad</option>
+                <option value="bogota">Bogotá</option>
+                <option value="medellin">Medellín</option>
+                <option value="cali">Cali</option>
+                <option value="barranquilla">Barranquilla</option>
+                <option value="cartagena">Cartagena</option>
+            </select>
+            
+            <button type="submit" class="btn-primary">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>
