@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/styles.css">
     <title>ACME AIR</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Error para dispositivos desktop -->
-    <div id="desktop-error">
+    <aside id="desktop-error">
         <img src="./img/logo.png" alt="Error de dispositivo">
         <h2>Esta aplicación está optimizada solo para dispositivos móviles</h2>
         <p>Por favor, accede desde tu smartphone o tablet para la mejor experiencia.</p>
-    </div>
-        <!-- Contenido visible solo en dispositivos móviles -->
-   <div class="container container-centered">
-        <div class="bordered-container">
-            <img src="./img/logo.png" alt="ACME AIR Logo" class="logo">
-            <h1>Iniciar Sesión</h1>
+    </aside>
+    
+    <!-- Contenido visible solo en dispositivos móviles -->
+    <main class="container container-centered">
+        <section class="bordered-container">
+            <header>
+                <img src="./img/logo.png" alt="ACME AIR Logo" class="logo">
+                <h1>Iniciar Sesión</h1>
+            </header>
+            
             <!-- Formulario de login -->
             <form action="menu.html">
                 <input type="email" class="input-field" placeholder="Email" required>
@@ -31,10 +34,15 @@
                 
                 <button type="submit" class="btn-primary btn-login">Ingresar</button>
             </form>
+            
             <!-- Enlaces -->
-            <a href="registro.html" class="link">Crear cuenta</a>
-            <a href="recuperar.html" class="link forgot-password">¿Has olvidado tu contraseña?</a>
-        </div>
-    </div>
+            <footer>
+                <nav>
+                    <a href="registro.html" class="link">Crear cuenta</a>
+                    <a href="recuperar.html" class="link forgot-password">¿Has olvidado tu contraseña?</a>
+                </nav>
+            </footer>
+        </section>
+    </main>
 </body>
 </html>
