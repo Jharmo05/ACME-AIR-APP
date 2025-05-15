@@ -7,86 +7,83 @@
     <title>ACME AIR - Mis Vuelos</title>
 </head>
 <body>
-    <div class="banner">
+    <header class="banner">
         <img src="./img/banner-a-mejorar.png" class="banner-img" alt="ACME AIR Banner">
-        <div class="banner-content">
-        </div>
-    </div>
+    </header>
 
-    <div class="container">
+    <main class="container">
         <!-- Sección del usuario -->
-        <div class="user-section">
-            <div class="user-info">
+        <aside class="user-section">
+            <section class="user-info">
                 <img src="./img/icono-usuario.png" alt="Avatar" class="user-avatar">
                 <div class="user-details">
                     <h3 class="user-name">John Doe</h3>
                     <a href="index.html" class="logout-link">Cerrar Sesión</a>
                 </div>
-            </div>
-        </div>
+            </section>
+        </aside>
 
-    <div class="container">
         <!-- Título de la sección -->
         <h1 class="flights-title">Mis Vuelos</h1>
         
         <!-- Lista de vuelos -->
-        <div class="flights-list">
+        <section class="flights-list">
             <!-- Vuelo 1 -->
-            <div class="flight-card">
-                <div class="flight-header">
+            <article class="flight-card">
+                <header class="flight-header">
                     <span class="flight-schedule">05:30 - 06:30</span>
                     <span class="flight-number">VAA025</span>
-                </div>
-                <div class="flight-details">
+                </header>
+                <figure class="flight-details">
                     <img src="./img/avion.png" alt="Avión" class="flight-icon">
-                    <span class="flight-duration">1h 30 min</span>
-                </div>
-                <div class="flight-date">Sep 29</div>
-                <div style="display: flex; justify-content: space-between;">
+                    <figcaption class="flight-duration">1h 30 min</figcaption>
+                </figure>
+                <time class="flight-date">Sep 29</time>
+                <footer style="display: flex; justify-content: space-between;">
                     <div class="flight-route">Bogotá - Barranquilla</div>
                     <div class="flight-status status-on-time">A TIEMPO</div>
-                </div>
-            </div>
+                </footer>
+            </article>
         
-            
-            
             <!-- Vuelo 2 -->
-            <div class="flight-card">
-                <div class="flight-header">
+            <article class="flight-card">
+                <header class="flight-header">
                     <span class="flight-schedule">10:30 - 12:00</span>
                     <span class="flight-number">VAA185</span>
-                </div>
-                <div class="flight-details">
+                </header>
+                <figure class="flight-details">
                     <img src="./img/avion.png" alt="Avión" class="flight-icon">
-                    <span class="flight-duration">1h 30 min</span>
-                </div>
-                <div class="flight-date">Jul 05</div>
-                <div style="display: flex; justify-content: space-between;">
+                    <figcaption class="flight-duration">1h 30 min</figcaption>
+                </figure>
+                <time class="flight-date">Jul 05</time>
+                <footer style="display: flex; justify-content: space-between;">
                     <div class="flight-route">Bogotá - Barranquilla</div>
                     <div class="flight-status status-landed">ATERRIZÓ</div>
-                </div>
-            </div>
+                </footer>
+            </article>
             
             <!-- Vuelo 3 -->
-            <div class="flight-card">
-                <div class="flight-header">
+            <article class="flight-card">
+                <header class="flight-header">
                     <span class="flight-schedule">05:30 - 06:30</span>
                     <span class="flight-number">VAA800</span>
-                </div>
-                <div class="flight-details">
+                </header>
+                <figure class="flight-details">
                     <img src="./img/avion.png" alt="Avión" class="flight-icon">
-                    <span class="flight-duration">1h 30 min</span>
-                </div>
-                <div class="flight-date">Feb 04</div>
-                <div style="display: flex; justify-content: space-between;">
+                    <figcaption class="flight-duration">1h 30 min</figcaption>
+                </figure>
+                <time class="flight-date">Feb 04</time>
+                <footer style="display: flex; justify-content: space-between;">
                     <div class="flight-route">Bogotá - Barranquilla</div>
                     <div class="flight-status status-landed">ATERRIZÓ</div>
-                </div>
-            </div>
-        </div>
+                </footer>
+            </article>
+        </section>
         
         <!-- Botón de volver -->
-        <a href="menu.html" class="btn-volver">VOLVER</a>
-    </div>
+        <nav>
+            <a href="menu.html" class="btn-volver">VOLVER</a>
+        </nav>
+    </main>
 </body>
 </html>
