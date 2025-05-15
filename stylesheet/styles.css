@@ -697,3 +697,168 @@ body.recovery-page {
 .status-on-time {
     color: #28a745;
 }
+
+.status-landed {
+    color: #6c757d;
+}
+
+/* Estilos para el mensaje de error de desktop */
+#desktop-error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    text-align: center;
+}
+
+#desktop-error h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2196F3;
+}
+
+#desktop-error p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d400ff;
+}
+
+#desktop-error img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Mostrar error solo en desktop */
+@media (min-width: 769px) {
+    #desktop-error {
+        display: flex;
+    }
+    
+    .container, .recovery-container, .banner, body > *:not(#desktop-error) {
+        display: none;
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+    .banner {
+        height: 100px;
+    }
+    
+    .banner-title {
+        font-size: 24px;
+    }
+    
+    .banner-icon {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .recovery-container {
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .recovery-form {
+        padding: 30px 20px;
+    }
+    
+    .recovery-title {
+        font-size: 20px;
+    }
+    .banner {
+        height: 100px;
+    }
+    
+    .banner-title {
+        font-size: 24px;
+    }
+    
+    .banner-icon {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .recovery-container {
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .recovery-form {
+        padding: 30px 20px;
+    }
+    
+    .recovery-title {
+        font-size: 20px;
+    }
+    
+    .password-requirements {
+        padding: 12px;
+    }
+    
+    .security-tips {
+        padding: 12px;
+    }
+
+    .banner {
+        height: 100px;
+    }
+    
+    .banner-title {
+        font-size: 24px;
+    }
+    
+    .banner-icon {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .recovery-container {
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    .recovery-form {
+        padding: 30px 20px;
+    }
+    
+    .recovery-title {
+        font-size: 20px;
+    }
+    
+    .password-requirements {
+        padding: 12px;
+    }
+    
+    .security-tips {
+        padding: 12px;
+    }
+    .banner {
+        height: 100px;
+    }
+    
+    .banner-title {
+        font-size: 24px;
+    }
+    
+    .user-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .check-in-title {
+        font-size: 20px;
+    }
+}
