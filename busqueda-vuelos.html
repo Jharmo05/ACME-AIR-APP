@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME AIR - Búsqueda de Vuelos</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css">
+</head>
+<body>
+   
+    <div class="banner banner-flight-search">
+        <img src="./img/banner-a-mejorar.png" class="banner-img" alt="ACME AIR Banner">
+    </div>
+
+    <div class="container flight-search-container">
+        <!-- Sección del usuario -->
+        <div class="user-section">
+            <div class="user-info">
+                <img src="./img/icono-usuario.png" alt="Avatar" class="user-avatar">
+                <div class="user-details">
+                    <h3 class="user-name">John Doe</h3>
+                    <a href="index.html" class="logout-link">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de búsqueda de vuelos -->
+        <div class="flight-search-form">
+            <h1 class="search-title">Búsqueda de Vuelos</h1>
+            
+            <!-- Checkbox Solo ida -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="soloIda" name="soloIda">
+                <label for="soloIda">Solo ida</label>
+            </div>
+
+            <!-- Formulario -->
+            <form action="vuelos-disponibles.html" method="GET">
+                <div class="form-group">
+                    <input type="text" class="input-field" placeholder="Origen" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="input-field" placeholder="Destino" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="date" class="input-field" placeholder="Fecha de salida" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="date" class="input-field" placeholder="Fecha de regreso" required>
+                </div>
+                
+                <button type="submit" class="btn-primary btn-search">BUSCAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
